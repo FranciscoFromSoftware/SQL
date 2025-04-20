@@ -129,3 +129,59 @@ UPDATE alter_egos SET nome_heroi = 'Gaviã Arqueira' WHERE id = 37;
 UPDATE alter_egos SET nome_heroi = 'Mulher-Hulk' WHERE id = 38;
 UPDATE alter_egos SET nome_heroi = 'Falcão' WHERE id = 39;
 UPDATE alter_egos SET nome_heroi = 'Shuri' WHERE id = 40;
+
+CREATE TABLE Viloes (
+    ID_Vilao INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL,
+    Codinome VARCHAR(100),
+    Crimes_Conhecidos TEXT,
+    Nivel_Periculosidade INT CHECK (Nivel_Periculosidade BETWEEN 1 AND 5),
+    Ultima_Aparicao DATE,
+    Status ENUM('Preso', 'Foragido', 'Morto') DEFAULT 'Foragido'
+);
+
+INSERT INTO Viloes (Nome, Codinome, Crimes_Conhecidos, Nivel_Periculosidade, Ultima_Aparicao, Status)
+VALUES
+('Edward Nigma', 'Charada', 'Extorsão, Sequestro, Jogos Mentais', 3, '2025-04-10', 'Preso'),
+('Harleen Quinzel', 'Arlequina', 'Assalto, Homicídio, Ato Terrorista', 4, '2025-03-15', 'Foragido'),
+('Oswald Cobblepot', 'Pinguim', 'Tráfico de Armas, Corrupção', 2, '2025-04-01', 'Preso'),
+('Selina Kyle', 'Mulher-Gato', 'Furto, Invasão de Propriedade', 2, '2025-04-12', 'Foragido'),
+('Jonathan Crane', 'Espantalho', 'Uso de Substâncias Químicas, Ameaça Terrorista', 5, '2025-04-18', 'Foragido'),
+('Waylon Jones', 'Crocodilo', 'Canibalismo, Homicídio', 4, '2025-03-25', 'Preso'),
+('Pamela Isley', 'Hera Venenosa', 'Bioterrorismo, Manipulação Mental', 3, '2025-04-03', 'Foragido'),
+('Basil Karlo', 'Cara de Barro', 'Sabotagem, Sequestro', 4, '2025-02-28', 'Morto'),
+('Victor Fries', 'Sr. Frio', 'Congelamento em Massa, Roubo de Tecnologia', 3, '2025-04-14', 'Preso'),
+('Roman Sionis', 'Máscara Negra', 'Tortura, Extorsão, Tráfico', 4, '2025-03-30', 'Morto'),
+
+('Slade Wilson', 'Exterminador', 'Assassinato por contrato, Espionagem', 5, '2025-04-10', 'Foragido'),
+('Garfield Lynns', 'Firefly', 'Incêndio Criminoso, Sabotagem', 3, '2025-03-18', 'Preso'),
+('Jervis Tetch', 'Chapeleiro Louco', 'Controle Mental, Sequestro', 2, '2025-03-20', 'Foragido'),
+('Lazaro Mendez', 'Eco Sombrio', 'Espionagem Tecnológica', 3, '2025-04-05', 'Foragido'),
+('Linda Vargas', 'Viúva Negra 2099', 'Envenenamento, Assassinato', 4, '2025-03-22', 'Preso'),
+('Carlos Ortega', 'Fantasma Urbano', 'Invasão de Sistemas, Hacking', 2, '2025-04-17', 'Foragido'),
+('Nina Vale', 'Miragem', 'Fraude, Manipulação Psicológica', 2, '2025-04-13', 'Preso'),
+('Tony Black', 'Zero Kelvin', 'Congelamento de Estruturas', 3, '2025-04-09', 'Foragido'),
+('Rebecca Steel', 'Engrenagem', 'Sabotagem de Infraestrutura', 3, '2025-03-12', 'Preso'),
+('Leonard Snart', 'Capitão Frio', 'Roubo, Ataques Congelantes', 3, '2025-04-15', 'Foragido'),
+
+('Mark Mardon', 'Mago do Clima', 'Destruição Climática', 5, '2025-04-08', 'Foragido'),
+('Richard Swift', 'A Sombra', 'Assassinato, Teletransporte Ilegal', 4, '2025-04-02', 'Preso'),
+('João Cruz', 'Demolidor Noturno', 'Explosões Urbanas', 4, '2025-03-28', 'Preso'),
+('Elena Moralez', 'Chicote de Prata', 'Ataques Coordenados, Sequestros', 3, '2025-04-06', 'Foragido'),
+('Miguel Ramires', 'Risco Fatal', 'Corridas Ilegais, Ataques de Alta Velocidade', 2, '2025-04-11', 'Preso'),
+('Irene Black', 'Rainha Mental', 'Controle de Massas, Lavagem Cerebral', 5, '2025-04-18', 'Foragido'),
+('Victor Zsasz', 'Zsasz', 'Homicídio em Série', 5, '2025-04-04', 'Preso'),
+('Julio Mendes', 'Explosivo-X', 'Atentados com Explosivos', 3, '2025-04-07', 'Foragido'),
+('Talia al Ghul', 'Talia', 'Liderança de Organização Criminosa', 4, '2025-03-16', 'Foragido'),
+('Ra’s al Ghul', 'Cabeça do Demônio', 'Tentativa de Extermínio Global', 5, '2025-04-01', 'Morto'),
+
+('Damien Cole', 'Nômade Sombrio', 'Crimes em Vários Países', 4, '2025-03-29', 'Foragido'),
+('Helena Cruz', 'Eco Violeta', 'Manipulação de Som e Frequência', 3, '2025-04-10', 'Preso'),
+('Clara Noir', 'Ilusão Rubra', 'Crimes Psíquicos', 3, '2025-04-13', 'Foragido'),
+('Felix Grant', 'Tempestade Cinza', 'Tempestades Controladas Artificialmente', 4, '2025-03-27', 'Foragido'),
+('Noah Black', 'Vácuo', 'Desintegração de Objetos', 5, '2025-04-05', 'Morto'),
+('Sasha Leal', 'Dama do Tempo', 'Anomalias Temporais', 5, '2025-04-12', 'Foragido'),
+('Rodrigo Flynn', 'Silêncio Azul', 'Assassinatos sem vestígios', 4, '2025-04-14', 'Preso'),
+('Igor Bravus', 'Pistão', 'Destruição Física, Lutas Urbanas', 3, '2025-03-19', 'Preso'),
+('Luna Marques', 'Sombria', 'Magia Negra, Ritualismo', 5, '2025-04-17', 'Foragido'),
+('Dante Vega', 'Engolidor de Luz', 'Manipulação de Luz e Sombras', 4, '2025-04-16', 'Foragido');
