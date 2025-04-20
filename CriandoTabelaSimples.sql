@@ -84,3 +84,48 @@ UPDATE alter_egos SET descricao_poderes = 'Arqueira habilidosa, combate corpo a 
 UPDATE alter_egos SET descricao_poderes = 'Força e resistência sobre-humana, transformação em Hulk' WHERE id = 38;
 UPDATE alter_egos SET descricao_poderes = 'Voo com asas, liderança, artes marciais' WHERE id = 39;
 UPDATE alter_egos SET descricao_poderes = 'Gênio tecnológico, combate, inteligência avançada' WHERE id = 40;
+
+
+ALTER TABLE alter_egos
+ADD COLUMN nome_heroi VARCHAR(150);
+
+UPDATE alter_egos SET nome_heroi = 'Batman' WHERE id = 1;
+UPDATE alter_egos SET nome_heroi = 'Mulher-Maravilha' WHERE id = 2;
+UPDATE alter_egos SET nome_heroi = 'Homem-Aranha' WHERE id = 3;
+UPDATE alter_egos SET nome_heroi = 'Pantera Negra' WHERE id = 4;
+UPDATE alter_egos SET nome_heroi = 'Superman' WHERE id = 5;
+UPDATE alter_egos SET nome_heroi = 'Jean Grey' WHERE id = 6;
+UPDATE alter_egos SET nome_heroi = 'Tempestade' WHERE id = 7;
+UPDATE alter_egos SET nome_heroi = 'Homem de Ferro' WHERE id = 8;
+UPDATE alter_egos SET nome_heroi = 'Feiticeira Escarlate' WHERE id = 9;
+UPDATE alter_egos SET nome_heroi = 'Wolverine' WHERE id = 10;
+UPDATE alter_egos SET nome_heroi = 'Flash' WHERE id = 11;
+UPDATE alter_egos SET nome_heroi = 'Lanterna Verde' WHERE id = 12;
+UPDATE alter_egos SET nome_heroi = 'Supergirl' WHERE id = 13;
+UPDATE alter_egos SET nome_heroi = 'Mulher-Gato' WHERE id = 14;
+UPDATE alter_egos SET nome_heroi = 'Doutor Estranho' WHERE id = 15;
+UPDATE alter_egos SET nome_heroi = 'Demolidor' WHERE id = 16;
+UPDATE alter_egos SET nome_heroi = 'Capitão América' WHERE id = 17;
+UPDATE alter_egos SET nome_heroi = 'Viúva Negra' WHERE id = 18;
+UPDATE alter_egos SET nome_heroi = 'Soldado Invernal' WHERE id = 19;
+UPDATE alter_egos SET nome_heroi = 'Capitã Marvel' WHERE id = 20;
+UPDATE alter_egos SET nome_heroi = 'Homem-Formiga' WHERE id = 21;
+UPDATE alter_egos SET nome_heroi = 'Vespa' WHERE id = 22;
+UPDATE alter_egos SET nome_heroi = 'Cavaleiro da Lua' WHERE id = 23;
+UPDATE alter_egos SET nome_heroi = 'Ms. Marvel' WHERE id = 24;
+UPDATE alter_egos SET nome_heroi = 'Homem-Aranha (Miles Morales)' WHERE id = 25;
+UPDATE alter_egos SET nome_heroi = 'Mulher-Aranha' WHERE id = 26;
+UPDATE alter_egos SET nome_heroi = 'Ciborgue' WHERE id = 27;
+UPDATE alter_egos SET nome_heroi = 'Aquaman' WHERE id = 28;
+UPDATE alter_egos SET nome_heroi = 'Shazam' WHERE id = 29;
+UPDATE alter_egos SET nome_heroi = 'Batgirl' WHERE id = 30;
+UPDATE alter_egos SET nome_heroi = 'John Constantine' WHERE id = 31;
+UPDATE alter_egos SET nome_heroi = 'Ravena' WHERE id = 32;
+UPDATE alter_egos SET nome_heroi = 'Asa Noturna' WHERE id = 33;
+UPDATE alter_egos SET nome_heroi = 'Capuz Vermelho' WHERE id = 34;
+UPDATE alter_egos SET nome_heroi = 'Robin' WHERE id = 35;
+UPDATE alter_egos SET nome_heroi = 'Robin (Damian)' WHERE id = 36;
+UPDATE alter_egos SET nome_heroi = 'Gaviã Arqueira' WHERE id = 37;
+UPDATE alter_egos SET nome_heroi = 'Mulher-Hulk' WHERE id = 38;
+UPDATE alter_egos SET nome_heroi = 'Falcão' WHERE id = 39;
+UPDATE alter_egos SET nome_heroi = 'Shuri' WHERE id = 40;
