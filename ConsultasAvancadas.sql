@@ -1,7 +1,7 @@
 SELECT
     classePai,
     data,
-    SUM(valor_atual)
+    SUM(valor_atual),
 FROM
     estoque
 WHERE
@@ -13,3 +13,4 @@ GROUP BY
 ORDER BY
     data,
     classe;
+
