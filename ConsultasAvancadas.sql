@@ -1,16 +1,20 @@
 SELECT
     classePai,
     data,
-    SUM(valor_atual),
+    SUM(valor_atual)
 FROM
     estoque
 WHERE
-    DAY(data) = 30
+    (
+        (MONTH(data) = 2 AND DAY(data) = 28)
+        OR
+        (MONTH(data) <> 2 AND DAY(data) = 30)
+    )
     AND YEAR(data) IN (2024, 2025)
 GROUP BY
-    classe,
+    classePai,
     data
 ORDER BY
     data,
-    classe;
+    classePai;
 
