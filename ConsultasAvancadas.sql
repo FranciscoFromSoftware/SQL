@@ -12,7 +12,7 @@ WHERE
         OR
         (MONTH(data) <> 2 AND DAY(data) = 30)
     )
-    AND YEAR(data) IN (2024, 2025)
+    AND YEAR(data) IN (2025)
 GROUP BY
     empresa_id,
     filial_id,
