@@ -1,4 +1,6 @@
 SELECT
+    empresa_id,
+    filial_id,
     classePai,
     data,
     SUM(valor_atual)
@@ -12,9 +14,14 @@ WHERE
     )
     AND YEAR(data) IN (2024, 2025)
 GROUP BY
+    empresa_id,
+    filial_id,
     classePai,
     data
 ORDER BY
     data,
-    classePai;
+    classePai,
+    filial_id,
+    empresa_id;
+-- Fim do arquivo ConsultasAvancadas.sql
 
